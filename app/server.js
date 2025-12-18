@@ -1,7 +1,7 @@
-let express = require('express');
-let path = require('path');
-let fs = require('fs');
-let app = express();
+const express = require('express');
+const path = require('path');
+const fs = require('fs');
+const app = express();
 
 
 app.get('/', function (req, res) {
