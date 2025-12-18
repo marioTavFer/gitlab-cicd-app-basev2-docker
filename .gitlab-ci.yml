@@ -10,6 +10,7 @@ realizar_testes:
   before_script:
     - cd app/
     - npm install
+    - npm install express jest jest-junit
   script:
     - npm test
   artifacts:
@@ -40,7 +41,7 @@ build_images:
 ###deploy_dev:
 #  stage: deploy
 #  needs:
-    - build_images
+#    - build_images
 #  tags:
 #    - gcp
 #  script:
